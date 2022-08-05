@@ -1,12 +1,6 @@
-from errno import ESTALE
-from turtle import title
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-
-# Para rodar executa o comando no termial
-#### streamlit run c:/Users/Mxs_Note/Desktop/case_casos_covid19.py
-
 
 # Lendo o DATASET
 df = pd.read_csv('https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-states.csv')
@@ -22,7 +16,6 @@ estados = list(df['state'].unique())
 state = st.sidebar.selectbox('Qual estado?', estados)
 
 # Seleção da coluna
-column = 'Casos por 100 mil habitantes'
 colunas = ['Novos óbitos', 'Novos casos', 'Óbitos por 100 mil habitantes', 'Casos por 100 mil habitantes']
 column = st.sidebar.selectbox('Qual tipo de informação?', colunas)
 
