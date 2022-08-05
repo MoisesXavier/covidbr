@@ -31,7 +31,7 @@ fig.update_layout( xaxis_title='Data', yaxis_title=column.upper(), title = {'x':
 
 # Imprimindo na aplicação
 st.title('DADOS COVID - BRASIL')
-st.write('Nessa aplicação, o usuário tem a opção de escolher o estado e o tipo de informação para mostrar o gráfico. Utilize o menu lateral para a mostragem.')
+st.write('Nessa aplicação, o usuário tem a opção de escolher o estado e o tipo de informação para mostrar no gráfico. Utilize o menu lateral para amostragem.')
 
 
 
