@@ -13,7 +13,7 @@ df = df.rename(columns={'newDeaths':'Novos óbitos',
 # Seleção do Estado
 estados = list(df['state'].unique())
 # print(estados)
-state = st.sidebar.multiselect('Qual estado?', estados)
+state = st.sidebar.selectbox('Qual estado?', estados)
 
 # Seleção da coluna
 colunas = ['Novos óbitos', 'Novos casos', 'Óbitos por 100 mil habitantes', 'Casos por 100 mil habitantes']
